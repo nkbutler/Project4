@@ -5,7 +5,17 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	cout << "Hello, " << argv[10] << "!";
+	string name;
+	if (argv[10])	
+	{
+		name = argv[10];
+	}
+	else
+	{
+		name = "World";
+	}
+	cout << "Hello, " << name << "!";
+	cout << endl;
 
 	return 0;
 }
